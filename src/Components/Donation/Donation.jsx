@@ -2,7 +2,7 @@
 
 const Donation = () => {
     return (
-        <div>
+        <div className="max-w-[1440px] mx-auto">
             Donation
         </div>
     );

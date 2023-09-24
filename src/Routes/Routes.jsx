@@ -3,6 +3,7 @@ import Layout from '../Layout/Layout';
 import Home from "../Pages/Home/Home";
 import Donation from "../Components/Donation/Donation";
 import Statistics from "../Components/Statistics/Statistics";
+import Category from "../Pages/Category/Category";
 
 
 
@@ -24,7 +25,13 @@ const Routes = createBrowserRouter([
             {
                 path: '/statistics',
                 element: <Statistics></Statistics>,
-            }
+            },
+            {
+                path: '/category/:id',
+                element: <Category></Category>,
+                loader: () => fetch('/AllData.json')
+            },
+
         ]
     }
 ])

@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 const AllCategoriesCard = ({ data }) => {
   const {
-    picture,
+    id,
     title,
+    picture,
     category,
     card_bg_color,
     category_bg_color,
     text_button_bg_color,
   } = data || {};
-  console.log(card_bg_color);
 
   const cardStyle = {
     backgroundColor: card_bg_color,
@@ -23,7 +25,7 @@ const AllCategoriesCard = ({ data }) => {
   };
 
   return (
-    <div>
+    <Link to={`/category/${id}`}>
       <div
         className="relative flex  flex-col rounded-xl bg-clip-border shadow-md"
         style={cardStyle}
@@ -45,7 +47,7 @@ const AllCategoriesCard = ({ data }) => {
           </h5>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
