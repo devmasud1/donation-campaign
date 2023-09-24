@@ -1,8 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from '../Layout/Layout';
 import Home from "../Pages/Home/Home";
-import Donation from '../Pages/Donation/Donation';
-import Statistics from "../Pages/Statistics/Statistics";
+import Donation from "../Components/Donation/Donation";
+import Statistics from "../Components/Statistics/Statistics";
+
+
 
 
 const Routes = createBrowserRouter([
@@ -12,7 +14,8 @@ const Routes = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch('/AllData.json')
             },
             {
                 path: '/donation',

@@ -1,5 +1,16 @@
+import { useLoaderData } from "react-router-dom";
+import AllCategories from "../AllCategories/AllCategories";
+
 const Home = () => {
-  return <div>home</div>;
+
+  const AllData = useLoaderData();
+
+  return (
+    <div>
+   
+      <AllCategories AllData={AllData}></AllCategories>
+    </div>
+  )
 };
 
 export default Home;
