@@ -9,8 +9,28 @@ const CategoryCard = ({ category }) => {
     price,
     description,
   } = category || {};
-  // category,
-  console.log(category);
+
+  const handleAddToLocalStorage = () => {
+    const addedDonationArray = [];
+
+    const donationCart = JSON.parse(localStorage.getItem("donation"));
+
+    if (!donationCart) {
+      addedDonationArray.push(category);
+      localStorage.setItem("donation", JSON.stringify(addedDonationArray));
+      alert("donation success");
+    } else {
+      const alreadyDonate = donationCart.find((item) => item.id === id);
+
+      if (!alreadyDonate) {
+        addedDonationArray.push(...donationCart, category);
+        localStorage.setItem("donation", JSON.stringify(addedDonationArray));
+        alert("donation success");
+      } else {
+        alert("already you donate this category");
+      }
+    }
+  };
 
   const bgStyle = {
     borderRadius: "8px",
@@ -28,7 +48,11 @@ const CategoryCard = ({ category }) => {
     <div className="max-w-[1440px] mx-auto">
       <div className="relative" style={bgStyle}>
         <div className="bg-[#0b0b0b80] h-24 absolute left-0 right-0 bottom-0">
-          <button className="py-2 px-4 m-8  text-white" style={btnStyle}>
+          <button
+            onClick={handleAddToLocalStorage}
+            className="py-2 px-4 m-8  text-white"
+            style={btnStyle}
+          >
             Donate ${price}
           </button>
         </div>
