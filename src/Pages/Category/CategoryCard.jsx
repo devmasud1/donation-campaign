@@ -1,14 +1,6 @@
 const CategoryCard = ({ category }) => {
-  const {
-    id,
-    title,
-    picture,
-    card_bg_color,
-    category_bg_color,
-    text_button_bg_color,
-    price,
-    description,
-  } = category || {};
+  const { id, title, picture, text_button_bg_color, price, description } =
+    category || {};
 
   const handleAddToLocalStorage = () => {
     const addedDonationArray = [];
