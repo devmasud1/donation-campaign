@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 const CategoryCard = ({ category }) => {
   const { id, title, picture, text_button_bg_color, price, description } =
     category || {};
@@ -10,16 +11,20 @@ const CategoryCard = ({ category }) => {
     if (!donationCart) {
       addedDonationArray.push(category);
       localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-      alert("donation success");
+      Swal.fire("Your donation has been complete");
     } else {
       const alreadyDonate = donationCart.find((item) => item.id === id);
 
       if (!alreadyDonate) {
         addedDonationArray.push(...donationCart, category);
         localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-        alert("donation success");
+        Swal.fire("Your donation has been complete");
       } else {
-        alert("already you donate this category");
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Already donate!",
+        });
       }
     }
   };
