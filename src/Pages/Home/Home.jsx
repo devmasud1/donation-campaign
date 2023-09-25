@@ -1,16 +1,45 @@
-import { useLoaderData } from "react-router-dom";
+
 import AllCategories from "../AllCategories/AllCategories";
 import Header from "../../Components/Header/Header";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  const AllData = useLoaderData();
+
+  const [category, setCategory] = useState([]);
+  const [originalCategory, setOriginalCategory] = useState([]);
+
+  useEffect(() => {
+    fetch("/AllData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setCategory(data);
+        setOriginalCategory(data);
+      });
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const searchByUser = e.target.name.value.toLowerCase();
+
+    if (searchByUser.trim() === "") {
+      setCategory(originalCategory);
+    } else {
+      const filterItem = originalCategory.filter(
+        (item) => item.category.toLowerCase() === searchByUser
+      );
+      setCategory(filterItem);
+    }
+
+    e.target.name.value = "";
+  };
 
   return (
     <div>
       <div className="mb-20">
-        <Header></Header>
+        <Header handleSubmit={handleSubmit}></Header>
       </div>
-      <AllCategories AllData={AllData}></AllCategories>
+      <AllCategories category={category}></AllCategories>
     </div>
   );
 };

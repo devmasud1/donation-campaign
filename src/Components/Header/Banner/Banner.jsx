@@ -1,4 +1,7 @@
-const Banner = () => {
+const Banner = ({handleSubmit}) => {
+
+ 
+
   return (
     <div>
       <div className="hero-content text-center text-neutral-content">
@@ -8,12 +11,12 @@ const Banner = () => {
           </h1>
           <div>
             <div>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <input
                   type="text"
                   name="name"
                   placeholder="Search here...."
-                  className="outline-none py-1 px-4 text-[#0b0b0b66] "
+                  className="outline-none py-1 px-4 text-[#0b0b0b66] font-semibold"
                 />
                 <input
                   type="submit"
