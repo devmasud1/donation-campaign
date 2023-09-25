@@ -36,7 +36,7 @@ const Donation = () => {
                   ))}
           </div>
           <div>
-            {storeData.length >= 4 ? (
+            {storeData.length > 4 ? (
               <div className="text-center">
                 <button
                   onClick={() => setIsShow(!isShow)}

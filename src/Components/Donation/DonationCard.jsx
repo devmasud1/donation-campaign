@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const DonationCard = ({ data }) => {
   const {
+    id,
     title,
     picture,
     card_bg_color,
@@ -8,6 +11,14 @@ const DonationCard = ({ data }) => {
     price,
     category,
   } = data || {};
+
+  const navigate = useNavigate()
+
+  const handleViewDetails = () =>{
+
+    navigate (`/category/${id}`)
+
+  }
 
   const cardStyle = {
     backgroundColor: card_bg_color,
@@ -37,7 +48,7 @@ const DonationCard = ({ data }) => {
         <h4 className="font-semibold mb-2" style={priceStyle}>
           ${price}
         </h4>
-        <button style={viewBtnStyle} className="text-white px-4 py-2">
+        <button onClick={handleViewDetails} style={viewBtnStyle} className="text-white px-4 py-2">
           View Details
         </button>
       </div>
