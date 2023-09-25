@@ -1,7 +1,4 @@
 const Banner = ({handleSubmit}) => {
-
- 
-
   return (
     <div>
       <div className="hero-content text-center text-neutral-content">

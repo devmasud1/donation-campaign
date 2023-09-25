@@ -42,7 +42,7 @@ const CategoryCard = ({ category }) => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-5 md:mx-auto my-5">
+    <div className="max-w-[1440px] mx-5 lg:mx-auto my-5">
       <div className="relative h-[400px] md:h-[600px]" style={bgStyle}>
         <div className="bg-[#0b0b0b80] h-24 absolute left-0 right-0 bottom-0">
           <button
