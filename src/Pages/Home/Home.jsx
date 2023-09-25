@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="mb-20">
+      <div className="mb-10 md:mb-20">
         <Header handleSubmit={handleSubmit}></Header>
       </div>
       <AllCategories category={category}></AllCategories>

@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="bg-slate-200 bg-opacity-50">
-      <div className="max-w-[1440px] mx-auto flex justify-between items-center ">
-        <div>
+      <div className="max-w-[1440px] mx-5 lg:mx-auto flex justify-between items-center ">
+        <div className="hidden md:block">
           <img src="https://i.ibb.co/FDy9XXq/Logo.png" alt="" />
         </div>
         <div>
-          <nav>
-            <ul className="flex gap-8">
+          <nav className="w-[50%] md:w-full mx-auto">
+            <ul className="flex gap-10 md:gap-8 py-4">
               <li>
                 <NavLink
                   to="/"

@@ -34,7 +34,7 @@ const CategoryCard = ({ category }) => {
     backgroundImage: `url(${picture})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "700px",
+    
   };
 
   const btnStyle = {
@@ -42,8 +42,8 @@ const CategoryCard = ({ category }) => {
   };
 
   return (
-    <div className="max-w-[1440px] mx-auto">
-      <div className="relative" style={bgStyle}>
+    <div className="max-w-[1440px] mx-5 md:mx-auto my-5">
+      <div className="relative h-[400px] md:h-[600px]" style={bgStyle}>
         <div className="bg-[#0b0b0b80] h-24 absolute left-0 right-0 bottom-0">
           <button
             onClick={handleAddToLocalStorage}
@@ -55,7 +55,7 @@ const CategoryCard = ({ category }) => {
         </div>
       </div>
       <div>
-        <h2 className="text-4xl font-bold my-6">{title}</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-5 mb-3">{title}</h2>
         <p className="text-[#0b0b0bb3]">{description}</p>
       </div>
     </div>

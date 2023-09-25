@@ -12,13 +12,11 @@ const DonationCard = ({ data }) => {
     category,
   } = data || {};
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handleViewDetails = () =>{
-
-    navigate (`/category/${id}`)
-
-  }
+  const handleViewDetails = () => {
+    navigate(`/category/${id}`);
+  };
 
   const cardStyle = {
     backgroundColor: card_bg_color,
@@ -36,19 +34,26 @@ const DonationCard = ({ data }) => {
     backgroundColor: text_button_bg_color,
   };
   return (
-    <div className="flex  items-center  gap-10" style={cardStyle}>
-      <div className="rounded-tl-8">
-        <img src={picture} alt={title} className="rounded-tl-8" />
+    <div
+      className="flex w-full flex-col lg:flex-row items-center gap-10  mx-auto"
+      style={cardStyle}
+    >
+      <div className="w-full lg:w-[30%] h-full">
+        <img src={picture} alt={title} className="rounded-tl-8 object-cover w-full h-[100%]" />
       </div>
-      <div>
-        <button style={categoryBtnStyle} className="px-4 py-1">
+      <div className="py-5 px-4 lg:px-0 md:py-5 w-full lg:w-[70%]">
+        <button style={categoryBtnStyle} className="px-2 md:px-4 py-1">
           {category}
         </button>
-        <h2 className="text-2xl font-semibold my-2">{title}</h2>
+        <h2 className="md:text-2xl font-semibold my-2">{title}</h2>
         <h4 className="font-semibold mb-2" style={priceStyle}>
           ${price}
         </h4>
-        <button onClick={handleViewDetails} style={viewBtnStyle} className="text-white px-4 py-2">
+        <button
+          onClick={handleViewDetails}
+          style={viewBtnStyle}
+          className="text-white px-2 py-1 md:px-4 md:py-2"
+        >
           View Details
         </button>
       </div>

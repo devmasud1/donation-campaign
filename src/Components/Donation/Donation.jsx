@@ -17,7 +17,7 @@ const Donation = () => {
   }, []);
 
   return (
-    <div className="max-w-[1440px] mx-auto my-20">
+    <div className="max-w-[1440px] mx-5 lg:mx-auto my-10 md:my-20">
       {noData ? (
         <p className="h-[70vh] flex justify-center items-center text-2xl font-bold">
           {noData}

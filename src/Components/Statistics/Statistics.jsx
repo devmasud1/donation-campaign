@@ -78,7 +78,7 @@ export default function Statistics() {
            </Pie>
          </PieChart>
        </div>
-       <div className="flex items-center gap-10">
+       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
          <div className="flex items-center gap-3">
            <p>Your Donation</p>
            <h5 className="w-20 h-4 bg-[#00C49F] rounded-sm"></h5>
@@ -112,7 +112,7 @@ export default function Statistics() {
               </Pie>
             </PieChart>
           </div>
-          <div className="flex items-center gap-10">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10">
             <div className="flex items-center gap-3">
               <p>Your Donation</p>
               <h5 className="w-20 h-4 bg-[#00C49F] rounded-sm"></h5>
@@ -127,3 +127,5 @@ export default function Statistics() {
     </div>
   );
 }
+
+// flex flex-col md:flex-row items-center gap-10

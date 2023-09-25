@@ -27,7 +27,7 @@ const AllCategoriesCard = ({ data }) => {
   return (
     <Link to={`/category/${id}`}>
       <div
-        className="relative flex  flex-col rounded-xl bg-clip-border shadow-md"
+        className="relative flex flex-col rounded-xl bg-clip-border shadow-md mx-5 lg:mx-auto"
         style={cardStyle}
       >
         <div className="relative overflow-hidden rounded-t-lg bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
@@ -38,11 +38,11 @@ const AllCategoriesCard = ({ data }) => {
             className="w-full"
           />
         </div>
-        <div className="p-6" style={titleStyle}>
+        <div className="mt-5 mb-3 ml-5" style={titleStyle}>
           <button className="py-1 px-2 mb-2" style={btnStyle}>
             {category}
           </button>
-          <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+          <h5 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             {title}
           </h5>
         </div>

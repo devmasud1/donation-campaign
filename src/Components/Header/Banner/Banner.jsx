@@ -6,7 +6,7 @@ const Banner = ({handleSubmit}) => {
     <div>
       <div className="hero-content text-center text-neutral-content">
         <div className="">
-          <h1 className="mb-5 text-5xl font-bold text-[#0B0B0B]">
+          <h1 className="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold text-[#0B0B0B]">
             I Grow By Helping People In Need
           </h1>
           <div>
