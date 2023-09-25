@@ -30,7 +30,7 @@ const AllCategoriesCard = ({ data }) => {
         className="relative flex flex-col rounded-xl bg-clip-border shadow-md mx-5 lg:mx-auto"
         style={cardStyle}
       >
-        <div className="relative overflow-hidden rounded-t-lg bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+        <div className="relative overflow-hidden rounded-t-lg bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 max-h-48">
           <img
             src={picture}
             alt="img-blur-shadow"

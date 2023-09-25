@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "picture": "https://i.ibb.co/g4Tqjzb/Health.png",
-    "title": "Clean water for children",
+    "picture": "https://i.ibb.co/n6tYKr8/1.jpg",
+    "title": "Nutritious meals for children",
     "category": "Health",
     "card_bg_color": "#0052ff26",
     "category_bg_color": "#0052ff33",
@@ -12,8 +12,8 @@
   },
   {
     "id": 2,
-    "picture": "https://i.ibb.co/7jFYJxK/Education.png",
-    "title": "Good education",
+    "picture": "https://i.ibb.co/52RtgDv/2.jpg",
+    "title": "Education for every child",
     "category": "Education",
     "card_bg_color": "#ff444a26",
     "category_bg_color": "#ff444a33",
@@ -23,8 +23,8 @@
   },
   {
     "id": 3,
-    "picture": "https://i.ibb.co/bKVgtpD/Clothing.png",
-    "title": "Used Clothing Drive",
+    "picture": "https://i.ibb.co/6RKFL2T/3.jpg",
+    "title": "Dressing little Ones in style",
     "category": "Clothing",
     "card_bg_color": "#79c23f26",
     "category_bg_color": "#79c23f33",
@@ -34,8 +34,8 @@
   },
   {
     "id": 4,
-    "picture": "https://i.ibb.co/vVv7jMM/Food.png",
-    "title": "Better Food for Everyone",
+    "picture": "https://i.ibb.co/ZHMZW26/4.jpg",
+    "title": "Elevating food for all",
     "category": "Food",
     "card_bg_color": "#f8714726",
     "category_bg_color": "#f8714733",
@@ -45,8 +45,8 @@
   },
   {
     "id": 5,
-    "picture": "https://i.ibb.co/vVv7jMM/Food.png",
-    "title": "Better Food for Everyone",
+    "picture": "https://i.ibb.co/Hh6yhDM/5.jpg",
+    "title": "Quality food access for all",
     "category": "Food",
     "card_bg_color": "#f8714726",
     "category_bg_color": "#f8714733",
@@ -56,8 +56,8 @@
   },
   {
     "id": 6,
-    "picture": "https://i.ibb.co/bKVgtpD/Clothing.png",
-    "title": "Used Clothing Drive",
+    "picture": "https://i.ibb.co/jGqTcsB/6.jpg",
+    "title": "Children's wardrobe essentials",
     "category": "Clothing",
     "card_bg_color": "#79c23f26",
     "category_bg_color": "#79c23f33",
@@ -67,8 +67,8 @@
   },
   {
     "id": 7,
-    "picture": "https://i.ibb.co/7jFYJxK/Education.png",
-    "title": "Good education",
+    "picture": "https://i.ibb.co/5LhLz74/7.jpg",
+    "title": "Investing in child education",
     "category": "Education",
     "card_bg_color": "#ff444a26",
     "category_bg_color": "#ff444a33",
@@ -78,7 +78,7 @@
   },
   {
     "id": 8,
-    "picture": "https://i.ibb.co/g4Tqjzb/Health.png",
+    "picture": "https://i.ibb.co/n6MrJg8/8.jpg",
     "title": "Clean water for children",
     "category": "Health",
     "card_bg_color": "#0052ff26",
@@ -89,8 +89,8 @@
   },
   {
     "id": 9,
-    "picture": "https://i.ibb.co/g4Tqjzb/Health.png",
-    "title": "Clean water for children",
+    "picture": "https://i.ibb.co/1rWn1ky/9.jpg",
+    "title": "Sustainable future for children",
     "category": "Health",
     "card_bg_color": "#0052ff26",
     "category_bg_color": "#0052ff33",
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "picture": "https://i.ibb.co/7jFYJxK/Education.png",
-    "title": "Good education",
+    "title": "Literacy for all",
     "category": "Education",
     "card_bg_color": "#ff444a26",
     "category_bg_color": "#ff444a33",
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "picture": "https://i.ibb.co/bKVgtpD/Clothing.png",
-    "title": "Used Clothing Drive",
+    "title": "Dressing up our little stars",
     "category": "Clothing",
     "card_bg_color": "#79c23f26",
     "category_bg_color": "#79c23f33",
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "picture": "https://i.ibb.co/vVv7jMM/Food.png",
-    "title": "Better Food for Everyone",
+    "title": "Enhanced nutrition for all",
     "category": "Food",
     "card_bg_color": "#f8714726",
     "category_bg_color": "#f8714733",
